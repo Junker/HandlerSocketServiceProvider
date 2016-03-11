@@ -11,7 +11,7 @@ class HandlerSocketServiceProvider implements ServiceProviderInterface
     {
         $app['hs'] = $app->share(function(Application $app) {
             $options = $app['hs.options'];
-            $driver_options = $options['driverOptions'];
+            $driverOptions = isset($options['driverOptions']) ? $options['driverOptions'] : [];
 
             if (isset($options['driver']))
                 $driverOptions['driver'] = $options['driver'];
