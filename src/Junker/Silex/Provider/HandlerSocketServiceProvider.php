@@ -5,7 +5,7 @@ use Silex\ServiceProviderInterface;
 use HSAL\HSAL;
 
 
-class HandlersocketServiceProvider implements ServiceProviderInterface
+class HandlerSocketServiceProvider implements ServiceProviderInterface
 {
     public function register(Application $app)
     {
