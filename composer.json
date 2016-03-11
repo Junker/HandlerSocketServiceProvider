@@ -1,0 +1,21 @@
+{
+    "name": "junker/handlersocket-service-provider",
+    "description": "Silex Service provider for using YAML routing files",
+    "keywords": ["silex","handlersocket","mysql", "handler socket"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Kosenkov",
+            "email": "dk-junker@ya.ru"
+        }
+    ],
+    "require": {
+        "silex/silex": "1.*",
+        "hsal/hsal": "^2.1",
+    },
+    "autoload": {
+        "psr-0" : {
+            "Junker" : "src/"
+        }
+    }
+}
