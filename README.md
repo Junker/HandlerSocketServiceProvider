@@ -31,6 +31,7 @@ $app->register(new HandlerSocketServiceProvider(), [
 
 $app->register(new HandlerSocketServiceProvider(), [
     'hs.options' => [
+        'driver' => HSAL::DRIVER_HSPHP,
         'host' => 'localhost',
         'dbname' => 'testdb',
         'port_read' => 9998,
