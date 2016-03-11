@@ -11,7 +11,7 @@ class HandlerSocketServiceProvider implements ServiceProviderInterface
     {
         $app['hs'] = $app->share(function(Application $app) {
             $options = $app['hs.options'];
-            $driver_options = isset($options['driverOptions']) ? $options['driverOptions'] : [];
+            $driverOptions = isset($options['driverOptions']) ? $options['driverOptions'] : [];
 
             if (isset($options['driver']))
                 $driverOptions['driver'] = $options['driver'];
@@ -25,7 +25,7 @@ class HandlerSocketServiceProvider implements ServiceProviderInterface
             if (isset($timeout['timeout']))
                 $driverOptions['timeout'] = $options['timeout'];
 
-            $hs = new HSAL($options['host'], $options['dbname'], $driver_options);
+            $hs = new HSAL($options['host'], $options['dbname'], $driverOptions);
             
             return $hs;
         });
