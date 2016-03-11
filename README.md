@@ -1,5 +1,10 @@
 # HandlerSocketServiceProvider
+
 HandlerSocket Service Provider for Silex 
+
+[![Latest Stable Version](https://poser.pugx.org/junker/handlersocket-service-provider/v/stable)](https://packagist.org/packages/junker/handlersocket-service-provider)
+[![Total Downloads](https://poser.pugx.org/junker/handlersocket-service-provider/downloads)](https://packagist.org/packages/junker/handlersocket-service-provider)
+[![License](https://poser.pugx.org/junker/handlersocket-service-provider/license)](https://packagist.org/packages/junker/handlersocket-service-provider)
 
 ## Requirements
 silex 1.x
