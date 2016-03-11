@@ -11,7 +11,7 @@
     ],
     "require": {
         "silex/silex": "1.*",
-        "hsal/hsal": "^2.1",
+        "hsal/hsal": "^2.1"
     },
     "autoload": {
         "psr-0" : {
