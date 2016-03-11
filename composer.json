@@ -1,6 +1,6 @@
 {
     "name": "junker/handlersocket-service-provider",
-    "description": "Silex Service provider for using YAML routing files",
+    "description": "HandlerSocket Service Provider for Silex",
     "keywords": ["silex","handlersocket","mysql", "handler socket"],
     "license": "MIT",
     "authors": [
