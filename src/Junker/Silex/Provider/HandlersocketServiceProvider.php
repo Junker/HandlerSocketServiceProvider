@@ -25,7 +25,7 @@ class HandlerSocketServiceProvider implements ServiceProviderInterface
             if (isset($timeout['timeout']))
                 $driverOptions['timeout'] = $options['timeout'];
 
-            $hs = new HSAL($options['host'], $options['dbname'], $driverOptions);
+            $hs = new HSAL($options['host'], $options['dbname'], $driver_options);
             
             return $hs;
         });
