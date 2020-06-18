@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "silex/silex": "1.*",
+        "silex/silex": "~2.0",
         "junker/hsal": "^0.2.1"
     },
     "autoload": {

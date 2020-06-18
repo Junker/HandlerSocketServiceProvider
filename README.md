@@ -7,12 +7,12 @@ HandlerSocket Service Provider for Silex
 [![License](https://poser.pugx.org/junker/handlersocket-service-provider/license)](https://packagist.org/packages/junker/handlersocket-service-provider)
 
 ## Requirements
-silex 1.x
+silex 2.x
 
-##Installation
+## Installation
 The best way to install HandlerSocketServiceProvider is to use a [Composer](https://getcomposer.org/download):
 
-    php composer.phar require junker/handlersocket-service-provider
+    composer require junker/handlersocket-service-provider
 
 ## Examples
 

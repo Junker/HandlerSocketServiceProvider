@@ -1,15 +1,15 @@
 <?php
 namespace Junker\Silex\Provider;
-use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 use HSAL\HSAL;
 
 
 class HandlerSocketServiceProvider implements ServiceProviderInterface
 {
-    public function register(Application $app)
+    public function register(Container $app)
     {
-        $app['hs'] = $app->share(function(Application $app) {
+        $app['hs'] = function($app) {
             $options = $app['hs.options'];
             $driverOptions = isset($options['driverOptions']) ? $options['driverOptions'] : [];
 
@@ -26,11 +26,8 @@ class HandlerSocketServiceProvider implements ServiceProviderInterface
                 $driverOptions['timeout'] = $options['timeout'];
 
             $hs = new HSAL($options['host'], $options['dbname'], $driverOptions);
-            
+
             return $hs;
-        });
-    }
-    public function boot(Application $app)
-    {
+        };
     }
 }
